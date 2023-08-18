@@ -1,0 +1,14 @@
+<div>
+  <h4> sharing data from parent to child using property binding</h4>
+  <app-company></app-company> // 1
+  </div>
+
+
+<br>
+<h4>Example for output decorator</h4>
+  <div class="parent-component">
+    <h1> This is the parent component </h1> // 2
+    <app-data-component (buttonWasClicked)="buttonInChildComponentWasClicked($event)"></app-data-component> // 3 //13
+    <p>{{message}}</p> // 15
+    <p>{{data.join(', ')}}</p> //16
+  </div>
